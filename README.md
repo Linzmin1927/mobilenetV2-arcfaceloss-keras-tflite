@@ -1,0 +1,2 @@
+# mobilenetV2-arcfaceloss-keras-tflite
+ 归纳了用mobilenet加arcfaceloss训练模型的keras框架，并提供将模型转为八位tflite的脚本
