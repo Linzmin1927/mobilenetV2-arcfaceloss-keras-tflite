@@ -7,6 +7,7 @@
 
 ## 0. 准备环境
 **训数据**
+
 训练数据与测试数据引用了前人的成果，数据集采用ms1m-refine-v2(MS1M-ArcFace, [链接](https://github.com/deepinsight/insightface/wiki/Dataset-Zoo))，该数据集为arcfaceloss原作者清洗后的人脸数据，包含85742个不同人的人脸数据，原作者使用的mxnet数据存储格式。本仓库使用tf后端的keras，可以采用这个[脚本](https://github.com/auroua/InsightFace_TF/blob/master/data/mx2tfrecords.py)，将其转换为tfrecode的格式。
 也可以使用我转换好的数据：[baidu](https://pan.baidu.com/s/17wUppPURFISmsJHtfUd2HA)(提取码：5nwq)。 注意，其中train.tfrecords为转换后的数据集，train.rec与train.idx为mxnet格式数据集。其他*.bin为测试数据集。
 
@@ -31,7 +32,7 @@ train.py脚本保存权重为MobilenetV2主干网络加上ArcFaceloss层，其�
 # 注意修改21行的weight_file为checkpoint中保存的权重文件
 # 修改22行json_file为项目目录下保存的模型结构文件
 # 脚本会生成一个按时间创建的临时文件夹(tmp_YYYY-MM-DD_hhmmss),其中包含一个frozen_model.pb文件
-python h5_2_pb.py  ```
+python h5_2_pb.py
 
 ```
 # 执行optimize_pb.sh脚本，去除上一步中生成pb文件中与输入输出无关的变量,这里使用tensrflow自带脚本
