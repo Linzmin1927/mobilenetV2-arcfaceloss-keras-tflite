@@ -33,6 +33,7 @@ train.py脚本保存权重为MobilenetV2主干网络加上ArcFaceloss层，其�
 # 修改22行json_file为项目目录下保存的模型结构文件
 # 脚本会生成一个按时间创建的临时文件夹(tmp_YYYY-MM-DD_hhmmss),其中包含一个frozen_model.pb文件
 python h5_2_pb.py
+```
 
 ```
 # 执行optimize_pb.sh脚本，去除上一步中生成pb文件中与输入输出无关的变量,这里使用tensrflow自带脚本
