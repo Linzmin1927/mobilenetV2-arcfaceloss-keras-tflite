@@ -66,11 +66,10 @@ python tflite_test.py
 ## 4. 模型基准测试
 ### MobilenetV2
 PB模型  
-![MobilenetV2_PB_Result](https://github.com/Linzmin1927/mobilenetV2-arcfaceloss-keras-tflite/images/pb_result.png "mobi_pb_result")
+![MobilenetV2_PB_Result](https://github.com/Linzmin1927/mobilenetV2-arcfaceloss-keras-tflite/blob/master/images/pb_result.png "mobi_pb_result")
 TFLITE模型  
-![MobilenetV2_TFLITE_Result](https://github.com/Linzmin1927/mobilenetV2-arcfaceloss-keras-tflite/images/tflite_result.png "tflite_pb_result")
+![MobilenetV2_TFLITE_Result](https://github.com/Linzmin1927/mobilenetV2-arcfaceloss-keras-tflite/blob/master/images/tflite_result.png "tflite_pb_result")
 ## 项目文件说明
-.
 ├── valid_dataset/  验证数据集  
 ├── model/  一些已经训练好的模型  
 ├── dataset.py      tfrecoder接口  
@@ -93,5 +92,7 @@ https://github.com/auroua/InsightFace_TF
 https://github.com/sirius-ai/MobileFaceNet_TF  
 https://github.com/deepinsight/insightface/wiki/Dataset-Zoo  
 https://arxiv.org/pdf/1804.07573  
+
+
 
 
