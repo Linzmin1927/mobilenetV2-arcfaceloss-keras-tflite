@@ -65,10 +65,13 @@ python tflite_test.py
 
 ## 4. 模型基准测试
 ### MobilenetV2
-PB模型  
+PB模型(12.5M)  
 ![MobilenetV2_PB_Result](https://github.com/Linzmin1927/mobilenetV2-arcfaceloss-keras-tflite/blob/master/images/pb_result.png "mobi_pb_result")
-TFLITE模型  
+TFLITE模型(9.1M)  
 ![MobilenetV2_TFLITE_Result](https://github.com/Linzmin1927/mobilenetV2-arcfaceloss-keras-tflite/blob/master/images/tflite_result.png "tflite_pb_result")
+ 比较一下可以发现TFLITE模型精度下降的微乎其微,但在安卓上推断速度在30ms~45ms之间,确实要比PB模型快了三成
+另外,可以发现cplfw这个数据集精度较低,这是因为这个数据集为侧脸数据集,没法对齐,所以精度较低,这里也说明这个小模型更多是应用与正脸识别的场合(稍微侧一些也是可以的,人脸偏航角超过60度就很难了,这个角度下基本只能看到一个眼睛.....)
+
 ## 项目文件说明
 ├── valid_dataset/  验证数据集  
 ├── model/  一些已经训练好的模型  
@@ -92,7 +95,5 @@ https://github.com/auroua/InsightFace_TF
 https://github.com/sirius-ai/MobileFaceNet_TF  
 https://github.com/deepinsight/insightface/wiki/Dataset-Zoo  
 https://arxiv.org/pdf/1804.07573  
-
-
 
 
