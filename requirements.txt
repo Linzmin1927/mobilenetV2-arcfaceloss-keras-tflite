@@ -3,7 +3,7 @@ mxnet==1.5.0
 Keras_Applications==1.0.8
 tensorflow_gpu==1.13.0
 prettytable==0.7.2
-opencv_python==3.4.2.16
+opencv_python==3.4.7.28
 absl_py==0.8.0
 tqdm==4.32.1
 matplotlib==3.1.1
